@@ -18,12 +18,17 @@ body {
 .profile-card {
   /* max-width: 300px; */
   width: 18em;
-  height: 50vh;
+  height: auto;
   background-color: red;
   z-index: 0;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.1);
   background: whitesmoke;
+  position: relative;
+}
+
+.maintaining-div{
+  padding-bottom: 19px;
 }
 
 .profile-img img {
@@ -37,6 +42,7 @@ body {
   z-index: 1;
   border: 2px solid blue;
   padding: 2px;
+  background-color: #ffffff;
 }
 
 .profile-data {
@@ -70,21 +76,20 @@ body {
   color: white;
 }
 
-
-.media-buttons .icon1 i{
+.media-buttons .icon1 i {
   background-color: blue;
 }
-.media-buttons .icon2 i{
+.media-buttons .icon2 i {
   background-color: rgb(19, 178, 231);
 }
-.media-buttons .icon3 i{
+.media-buttons .icon3 i {
   background-color: rgb(233, 10, 96);
 }
-.media-buttons .icon4 i{
+.media-buttons .icon4 i {
   background-color: rgb(44, 21, 125);
 }
 
-.option-button{
+.option-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,20 +97,46 @@ body {
   margin-top: 10px;
 }
 
-.option-button .choose{
+.option-button .choose {
   padding: 8px;
   border: 1px solid transparent;
+  font-weight: 400;
   background-color: rgb(25, 25, 177);
   color: white;
   border-radius: 20px;
+  transition: all .45s ease;
+  cursor: pointer;
+}
+.option-button .choose:hover{
+  background-color: black;
 }
 
-.cover{
-  width: 18em;
+.cover {
+  width: 100%;
   height: 6em;
-  background-color: blueviolet;
-  position: fixed;
+  background-color: rgb(20, 152, 197);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
   z-index: -1;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
+
+.profile-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  
+}
+
+.profile-footer .data{
+  padding: 0 10px 0 10px;
+  border-right: 2px solid gainsboro;
+  
+}
+
+.data:last-child{
+  border-right: none;
+}
+
+
