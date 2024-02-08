@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c9d5d6;
+}
+
+.profile-card {
+  /* max-width: 300px; */
+  width: 18em;
+  height: 50vh;
+  background-color: red;
+  z-index: 0;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1);
+  background: whitesmoke;
+}
+
+.profile-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /* clip-path: circle(50%); */
+  border-radius: 50%;
+  margin-top: 22px;
+  margin-left: 30%;
+  z-index: 1;
+  border: 2px solid blue;
+  padding: 2px;
+}
+
+.profile-data {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 8px;
+}
+.profile-data .data1 {
+  font-weight: bold;
+  font-size: 20px;
+}
+.profile-data .data2 {
+  font-size: 14px;
+}
+
+.media-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  font-size: 1.5em;
+  gap: 20px;
+  /* background-color: red; */
+}
+.media-buttons .link i {
+  /* background-color: red;  */
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+}
+
+
+.media-buttons .icon1 i{
+  background-color: blue;
+}
+.media-buttons .icon2 i{
+  background-color: rgb(19, 178, 231);
+}
+.media-buttons .icon3 i{
+  background-color: rgb(233, 10, 96);
+}
+.media-buttons .icon4 i{
+  background-color: rgb(44, 21, 125);
+}
+
+.option-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  margin-top: 10px;
+}
+
+.option-button .choose{
+  padding: 8px;
+  border: 1px solid transparent;
+  background-color: rgb(25, 25, 177);
+  color: white;
+  border-radius: 20px;
+}
+
+.cover{
+  width: 18em;
+  height: 6em;
+  background-color: blueviolet;
+  position: fixed;
+  z-index: -1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
